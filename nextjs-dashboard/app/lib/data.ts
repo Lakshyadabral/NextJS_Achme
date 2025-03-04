@@ -154,6 +154,7 @@ export async function fetchInvoiceById(id: string) {
       FROM invoices
       WHERE invoices.id = ${id};
     `;
+    
  
     const invoice = data.map((invoice) => ({
       ...invoice,
